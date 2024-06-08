@@ -43,7 +43,7 @@ func (c *echoCtx) URL() url.URL {
 }
 
 func (c *echoCtx) Param(name string) string {
-	return c.orig.Param(name)
+	return c.orig.PathParam(name)
 }
 
 func (c *echoCtx) Query(name string) string {
